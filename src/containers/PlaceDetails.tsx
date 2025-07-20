@@ -39,8 +39,8 @@ const PlaceDetails: FC<PlaceDetailsProps> = ({ placeDetails, className, selected
     return (
         <div className={clsx('flex-1', className)}>
             <div className="flex items-center justify-center gap-5 my-5">
-                <Drop filter={filterOptions} constent={type} setConstent={setType}/>
-                <Drop filter={filterRating} constent={rating} setConstent={setRating}/>
+                <Drop filter={filterOptions} content={type} setContent={setType}/>
+                <Drop filter={filterRating} content={rating} setContent={setRating}/>
             </div>
 
             <ScrollArea className="h-[80vh] w-full rounded-md border p-4 mx-auto">

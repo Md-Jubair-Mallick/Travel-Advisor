@@ -1,5 +1,4 @@
 import { useEffect, useState, type FC } from "react"
-import Test from "./components/custom/test";
 import { Header } from "./containers";
 import PlaceDetails from "./containers/PlaceDetails";
 import Map from "./containers/Map";
@@ -78,7 +77,6 @@ const App: FC = () => {
         <PlaceDetails placeDetails={placeDetails} className="flex-1 max-md:absolute z-10 top-[90vh]" selectedPlace={selectedPlace}/>
 
       </main>
-      <Test />
     </div>
   );
 }

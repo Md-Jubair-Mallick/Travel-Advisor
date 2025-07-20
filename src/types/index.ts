@@ -79,8 +79,9 @@ export type PlaceDetailsProps = {
   selectedPlace: number | null
 }
 
-export type DropProps = {
-  filter: { value: string | number; label: string }[];
-  constent: string;
-  setConstent: (value: string) => void;
-};
+
+export interface DropProps {
+  filter: { label: string; value: string }[];
+  content: string;
+  setContent: (value: string) => void;
+}

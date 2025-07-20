@@ -3,9 +3,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 
 
 
-const Drop: React.FC<DropProps> = ({ filter=[], constent, setConstent }) => {
+const Drop: React.FC<DropProps> = ({ filter=[], content, setContent }) => {
   return (
-    <Select onValueChange={setConstent} value={constent}>
+    <Select onValueChange={setContent} value={content}>
       <SelectTrigger className="w-[180px]">
         <SelectValue placeholder="Select Type" />
       </SelectTrigger>
